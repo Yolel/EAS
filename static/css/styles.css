@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "狂傲行书";
+    src: url(../fonts/狂傲行书.ttf);
+}
+
+@font-face {
+    font-family: "逍遥行书";
+    src: url(../fonts/逍遥行书.ttf);
+}
+
+html,
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: sans-serif;
+    width: 100%;
+    top: 0;
+    padding: 1.5em;
+    position: fixed;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8.5em;
+    letter-spacing: .85em;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 1vw;
+    background: white;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+header {
+    z-index: 1000;
+    box-shadow: 0 5px 8px rgba(38, 37, 37, 0.5);
+}
+
+.site-logo {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.site-logo img {
+    width: 32px;
+}
+
+.logo {
+    opacity: 1;
+}
+
+.site-nav {
+    position: relative;
+    float: right;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    display: block !important;
+    width: 50%;
+    padding: .75em 1em 0 0;
+    opacity: .95;
+    background: none;
+}
+
+.site-nav-right a {
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 1.8em;
+    font-family: "狂傲行书", serif;
+}
+
+.site-nav ul li a {
+    font-size: 13px;
+    padding-bottom: .5em;
+    text-decoration: none;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: black;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.site-nav ul li a:hover {
+    outline: none;
+    border-bottom: 1px solid black;
+    transition: .1s;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 2.2;
+    margin-bottom: -.35em;
+    padding-top: 13%;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
+}
+
+h1 {
+    margin-bottom: 1.5%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .05);
+    margin-left: .7em;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 2.75;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
+}
+
+.container {
+    display: block;
+    position: absolute;
+    font-family: "逍遥行书", serif;
+    top: 220px;
+    left: 80px;
+}
+
+.inscribe {
+    display: block;
+    position: absolute;
+    font-family: "逍遥行书", serif;
+    top: 580px;
+    left: 500px;
+}
+
+.typed-out {
+    color: #1e3439;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    font-size: 7em;
+    width: 0;
+    animation: blink 1s steps(15, end) forwards,
+    typing 1s steps(15, end) forwards;
+}
+
+.typed-out_i {
+    font-size: 4em;
+    text-align: right;
+    color: #1e3439;
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    width: 0;
+    animation: blink 1s steps(15, end) forwards,
+    typing 1s steps(15, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: #1e3439;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+.box {
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .7);
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.box h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.box input[type="text"], .box input[type="password"] {
+    border-radius: 24px;
+    border: 2px solid #3498db;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: grey;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+    width: 220px;
+    border-color: #2ecc71;
+}
+
+.box #acode {
+    width: 60px;
+    height: 40px;
+}
+
+.box img {
+    display: inline-block;
+    line-height: 75px;
+}
+
+.box input[type="submit"] {
+    border-radius: 24px;
+    border: 2px solid #2ecc71;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: grey;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    color: #FFFFFF;
+    background: #2ecc71;
+}
+
+.box li {
+    list-style: none;
+    float: left;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+}
+
+#register {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+
+#register a {
+    text-decoration: none;
+}
+
+#register a:hover {
+    color: #3498db;
+}
+
+#reset {
+    color: grey;
+    display: inline-block;
+    float: right
+}
+
+#reset a {
+    text-decoration: none
+}
+
+#reset a:hover {
+    color: darkred;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    text-align: center;
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #3498db;
+}
+
